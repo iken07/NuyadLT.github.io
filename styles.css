@@ -1,0 +1,207 @@
+/* Style the entire body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the orange bar */
+.orange-bar {
+    background-color: orange;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 80px;
+}
+
+/* Style the logo on the top left of the orange bar */
+.logo {
+    position: absolute;
+    top: -40px;
+    left: -50px;
+}
+/* ... (previous CSS code) ... */
+
+/* Add hover effect to the "TOURIST SPOT" text */
+.tourist-spot:hover {
+    color: orange; /* Change text color on hover */
+    cursor: pointer; /* Show a pointer cursor on hover */
+    transition: color 0.3s ease; /* Add a smooth color transition effect */
+}
+
+/* Adjust the logo size */
+.logo img {
+    max-width: 200px;
+}
+/* ... (previous CSS code) ... */
+
+/* Add hover effect to the FSPOT logo */
+.logo.interactive:hover img {
+    transform: rotate(20deg); /* Rotate the image on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Center "TOURIST SPOT" text */
+.tourist-spot {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.search-container input[type="text"]:hover,
+.search-container button[type="submit"]:hover {
+    background-color: #ff5722;
+    transition: background-color 0.3s ease;
+}
+/* Center the Search bar container */
+/* Center the Search bar container */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+/* Style the search input */
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ff5722; /* Border color for the input */
+    border-radius: 25px; /* Rounded corners */
+    outline: none;
+    font-size: 16px;
+}
+
+/* Style the creative "Search" button */
+button[type="submit"] {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Add a hover effect for the button */
+button[type="submit"]:hover {
+    background-color: #e64a19; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+}
+/* ... (previous CSS code) ... */
+
+/* Style the image slider */
+/* ... (previous CSS code) ... */
+
+/* Style the image gallery */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+/* ... (previous CSS code) ... */
+/* ... (previous CSS code) ... */
+
+/* Style the image cards */
+/* ... (previous CSS code) ... */
+
+/* Style the image cards */
+.image-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+/* ... (previous CSS code) ... */
+
+/* Style the image overlay for a creative effect */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translateY(50px);
+}
+
+.image-card:hover {
+    transform: scale(1.1);
+}
+
+.image-card:hover .image-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-overlay h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease; /* Add color transition */
+}
+
+.image-card:hover .image-overlay h2 {
+    color: orange; /* Change text color on hover */
+}
+
+.image-overlay p {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+    max-width: 80%;
+    transition: color 0.3s ease; /* Add color transition */
+}
+
+.image-card:hover .image-overlay p {
+    color: orange; /* Change text color on hover */
+}
+
+.image-overlay .description {
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Change the font */
+    margin: 10px 0;
+    transition: color 0.3s ease, font-size 0.3s ease; /* Add transitions for color and font-size */
+    display: none; /* Initially hidden */
+}
+
+.image-card:hover .image-overlay .description {
+    color: orange;
+    font-size: 14px; /* Smaller font size on hover */
+    display: block;
+}
+/* ... (previous CSS code) ... */
+
+/* ... (previous CSS code) ... */
+
+/* Style the dropdown navigation bar */
+
+
